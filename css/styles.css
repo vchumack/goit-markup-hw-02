@@ -1,0 +1,115 @@
+/* Палитра
++ primary BG цвет фона #ffffff
++ footer BG цвет фона футера и эффективные решения для бизнеса #2F303A
++ team цвет фона раздела наша команда #F5F4FA
++ logo цвет лого #000000
++ primary основной цвет текста #212121 
++ secondary вторичный цвет текста #757575 
++ third белый #FFFFFF
++ accent акцент #2196F3
++ link-secondary вторичный белый rgba(255, 255, 255, 0.6)
+
+*/
+
+
+:root {
+   --primary-text-color: #212121;
+   --secondary-text-color: #757575;
+   --third-text-color:#ffffff;
+   --logo-color: #000000;
+   --primary-background-color: #ffffff;
+   --team-background-color: #F5F4FA;
+   --footer-background-color: #2F303A;
+   --accent-color: #2196F3;
+   --link-secondary-color: rgba(255, 255, 255, 0.6);
+
+}
+
+/* Общая стилизация */
+body {
+   background-color: var(--primary-background-color);
+   color: var(--secondary-text-color)
+}
+
+.list {
+   list-style: none;
+}
+
+
+/* Стилизация логотипа  */
+.logo {
+   color: var(--accent-color);
+}
+
+.logo-header {
+   color: var(--logo-color);
+}
+
+.logo-footer {
+   color: var(--third-text-color);
+}
+
+/* Стилизация менюшки/навигации */
+.site-nav .link {
+   color: var(--primary-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+   color: var(--accent-color);
+}
+
+.header-contacts {
+   color: var(--secondary-text-color);
+}
+
+.header-contacts:hover {
+   color: var(--accent-color);
+}
+
+/* Стилизация Main: основная информация страницы */
+.hero {
+   background-color: var(--footer-background-color);
+}
+
+.hero-title {
+   color: var(--third-text-color);
+}
+
+.section-title {
+   color: var(--primary-text-color);
+}
+
+
+
+/* Стилизация раздела преимуществ */
+.features-title {
+   color: var(--primary-text-color);
+}
+
+.features-text {
+   color: var(--secondary-text-color);
+}
+
+
+
+/* Стилизация раздела c командой */
+.team-title {
+   color: var(--primary-text-color);
+}
+
+.team-text {
+   color: var(--secondary-text-color);
+}
+
+/* Стилизация футера */
+.page-footer {
+   background-color: var(--footer-background-color);
+}
+
+.footer-link {
+   color: var(--primary-background-color);
+}
+.footer-contacts {
+   color: var(--link-secondary-color);
+}
