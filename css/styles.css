@@ -62,14 +62,7 @@ body {
    line-height: 1.19;
 }
 
-.logo-footer {
-   color: var(--white-text-color);
 
-   font-family: Raleway, sans-serif;
-   font-weight: 700;
-   font-size: 26px;
-   line-height: 1.19;
-}
 
 /*---------------- Стилизация менюшки/навигации ----------------*/
 .site-nav .link {
@@ -123,12 +116,13 @@ body {
 .section-title {
    color: var(--secondary-text-color);
 
-   font-weight: 700;
    font-size: 36px;
    line-height: 1.16;
 }
 
 .btn {
+   cursor: pointer;
+
    color: var(--white-text-color);
    background-color: var(--accent-color);
 
@@ -144,7 +138,6 @@ body {
 .features-title {
    color: var(--secondary-text-color);
 
-   font-weight: 700;
    font-size: 14px;
    line-height: 1.14;
    text-transform: uppercase;
@@ -179,8 +172,17 @@ body {
 }
 
 /*---------------- Стилизация футера ----------------*/
-.page-footer {
+.footer-page {
    background-color: var(--footer-background-color);
+}
+
+.footer-logo {
+   color: var(--white-text-color);
+
+   font-family: Raleway, sans-serif;
+   font-weight: 700;
+   font-size: 26px;
+   line-height: 1.19;
 }
 
 .footer-link {
@@ -188,8 +190,13 @@ body {
 
    font-style: normal;
    text-decoration: none;
-  
 }
+
+.footer-link:hover,
+.footer-link:focus {
+   color: var(--accent-color);
+}
+
 .footer-contacts {
    color: var(--secondary-link-color);
 
@@ -197,10 +204,16 @@ body {
    text-decoration: none;
 }
 
+.footer-contacts:hover,
+.footer-contacts:focus {
+   color: var(--accent-color);
+}
 
 
 /*---------------------------------------- Стилизация cтраницы Портфолио ----------------------------------------*/
 .projects-btn {
+   cursor: pointer;
+
    color: var(--secondary-text-color);
    background-color: var(--secondary-background-color);
 
